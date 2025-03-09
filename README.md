@@ -100,24 +100,25 @@ To learn more about React Native, take a look at the following resources:
 
 This project uses environment-specific configuration files to manage different environments (Staging & Production).
 
-## Setting Up Environment Files
-
 - Create two .env files in the root directory:
-
 - .env.staging (for staging environment)
 - .env.production (for production environment)
 - Add the following variables to each file:
 
-## .env.staging
+### .env.staging
 
+```sh
 IS_DEBUG=1 # Debug mode enabled (Set to 0 in production)
 IS_LIVE=0 # Indicates non-live environment
 BASEURL= # Set your staging server URL
 WEBSOCKETURL= # Set your staging WebSocket URL
+```
 
-## .env.production
+### .env.production
 
+```sh
 IS_DEBUG=0 # Debug mode disabled
 IS_LIVE=1 # Indicates live environment
 BASEURL= # Set your production server URL
 WEBSOCKETURL= # Set your production WebSocket URL
+```
